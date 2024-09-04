@@ -1,12 +1,10 @@
-matplotlib
 streamlit
 pandas 
-numpy
-matplotlib
-re
-spacy
-tensorflow.keras
-keras
 pickle
 configparser
+re
+spacy
+tensorflow
+keras
+
 
