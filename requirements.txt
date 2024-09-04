@@ -6,7 +6,7 @@ matplotlib
 re
 spacy
 tensorflow.keras
-keras.models
+keras
 pickle
 configparser
 
