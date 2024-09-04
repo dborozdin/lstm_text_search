@@ -9,6 +9,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import pickle
 import configparser
+import ru_core_news_sm
     
 MAX_SEARCH_RESULTS=5
 st.set_page_config(layout="wide")
@@ -26,7 +27,8 @@ df_r= df_r.reset_index(drop=True)
 df_r['label_enc']= df_r.index
 
 disabled_pipes = [ "parser",  "ner"]
-nlp = spacy.load('ru_core_news_sm', disable=disabled_pipes)
+#nlp = spacy.load('ru_core_news_sm', disable=disabled_pipes)
+nlp= load(ru_core_news_sm)
 
 lemmatizer = nlp.get_pipe('lemmatizer')
 tokenizer = Tokenizer(oov_token='<oov>')

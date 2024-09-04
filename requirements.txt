@@ -1,7 +1,6 @@
 streamlit
-spacy
-spacy_streamlit
-https://github.com/explosion/spacy-models/releases/download/ru_core_news_lg-3.7.0/ru_core_news_lg-3.7.0-py3-none-any.whl#egg=ru_core_news_sm
+spacy>=3.0.0,<4.0.0
+ru_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/ru_core_news_lg-3.7.0/ru_core_news_lg-3.7.0-py3-none-any.whl
 tensorflow
 keras
 
