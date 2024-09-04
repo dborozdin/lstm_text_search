@@ -28,7 +28,7 @@ df_r['label_enc']= df_r.index
 
 disabled_pipes = [ "parser",  "ner"]
 #nlp = spacy.load('ru_core_news_sm', disable=disabled_pipes)
-nlp= load(ru_core_news_sm)
+nlp= ru_core_news_sm.load()
 
 lemmatizer = nlp.get_pipe('lemmatizer')
 tokenizer = Tokenizer(oov_token='<oov>')
