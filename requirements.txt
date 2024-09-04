@@ -1,4 +1,12 @@
 matplotlib
-streamlit==1.22.0
-pyod
+streamlit
+pandas 
+numpy
+matplotlib
+re
+spacy
+tensorflow.keras
+keras.models
+pickle
+configparser
 
